@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Pong</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="bar">
+      <div class="modes" id="modes">
+        <button data-mode="easy">Fácil</button>
+        <button data-mode="normal" class="active">Normal</button>
+        <button data-mode="hard">Difícil</button>
+        <button data-mode="2p">2 Jogadores</button>
+      </div>
+    </header>
+
+    <section class="stage">
+      <canvas id="game" width="800" height="500"></canvas>
+      <div id="overlay" class="overlay">
+        <h1>PONG</h1>
+        <p><kbd>W</kbd><kbd>S</kbd> ou mouse movem a raquete da esquerda · <kbd>↑</kbd><kbd>↓</kbd> a da direita no modo 2 jogadores</p>
+        <p>Primeiro a fazer <strong>7</strong> pontos vence · <kbd>Espaço</kbd> pausa</p>
+        <p class="cta">Toque ou pressione uma tecla para começar</p>
+      </div>
+    </section>
+    <p class="hint">No celular, arraste o dedo no lado da sua raquete.</p>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/paddle.js"></script>
+  <script src="js/ball.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
